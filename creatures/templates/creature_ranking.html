@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mythical Creatures Ranking</title>
+</head>
+<body>
+
+    <h2>Mythical Creatures Ranking</h2>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Strength</th>
+            <th>Speed</th>
+            <th>Intelligence</th>
+            <th>Score</th>
+            <th>Category</th>
+        </tr>
+        {% for creature in creatures %}
+        <tr>
+            <td>{{ creature.name }}</td>
+            <td>{{ creature.strength }}</td>
+            <td>{{ creature.speed }}</td>
+            <td>{{ creature.intelligence }}</td>
+            <td>{{ creature.score }}</td>
+            <td>{{ creature.category }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+</html>
